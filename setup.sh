@@ -29,4 +29,4 @@ fi
 export GPG_TTY=$(tty)
 gpg-connect-agent updatestartuptty /bye >/dev/null
 
-/usr/local/bin/gpg --import < gpg.pub
+/opt/homebrew/bin/gpg --import < gpg.pub
