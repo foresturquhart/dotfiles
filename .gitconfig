@@ -1,0 +1,51 @@
+[gpg]
+    program = /opt/homebrew/bin/gpg
+
+[push]
+    default = simple
+    followTags = true
+
+[github]
+    user = foresturquhart
+
+[user]
+    name = Forest Urquhart
+    email = forest.urquhart@gmail.com
+    signingkey = D1441709FF4EE850
+
+[credential]
+    helper = osxkeychain
+
+[init]
+    defaultBranch = main
+
+[core]
+    excludesfile = ~/.gitignore
+    whitespace = space-before-tab,-indent-with-non-tab,trailing-space
+    trustctime = false
+    precomposeunicode = false
+    untrackedCache = true
+
+[apply]
+    whitespace = fix
+
+[branch]
+    sort = -committerdate
+
+[commit]
+    gpgsign = true
+
+[tag]
+    gpgsign = true
+
+[diff]
+    renames = copies
+
+[diff "bin"]
+    textconv = /usr/bin/hexdump -v -C
+
+[help]
+    autocorrect = 1
+
+[merge]
+    log = true

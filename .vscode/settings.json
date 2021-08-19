@@ -1,0 +1,25 @@
+{
+    "git.enableCommitSigning": true,
+    "terminal.external.osxExec": "/Applications/iTerm.app",
+    "terminal.integrated.automationShell.osx": "/opt/homebrew/bin/zsh",
+    "terminal.integrated.confirmOnExit": "hasChildProcesses",
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "terminal.integrated.enableBell": true,
+    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "terminal.integrated.fontSize": 13,
+    "git.path": "/opt/homebrew/bin/git",
+    "git.terminalAuthentication": false,
+    "github.gitAuthentication": false,
+    "terminal.integrated.profiles.osx": {
+        "zsh": {
+            "path": "/opt/homebrew/bin/zsh",
+            "args": [
+                "-l"
+            ]
+        },
+        "bash": null,
+        "fish": null,
+        "tmux": null,
+        "pwsh": null
+    }
+}

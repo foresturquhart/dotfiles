@@ -1,0 +1,3 @@
+startup_message off
+defscrollback 32000
+defutf8 on
