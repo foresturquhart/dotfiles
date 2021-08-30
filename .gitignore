@@ -32,3 +32,5 @@ vendor
 *.sw?
 
 .awsconfig
+
+.gitsecret/keys/random_seed
