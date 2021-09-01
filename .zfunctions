@@ -1,0 +1,33 @@
+#!/usr/bin/env zsh
+
+function video-dl {
+    local args=( 
+        --no-simulate
+        --downloader aria2c
+        --restrict-filenames
+        --no-overwrites
+        --continue
+        --geo-bypass
+        --cookies-from-browser firefox
+        -o "%(title)s.%(ext)s"
+    )
+
+    if [ $# -eq 2 ]; then
+        if [ $1 = "audio" ]; then
+            yt-dlp ${args} \
+                --extract-audio \
+                --audio-format mp3 \
+                --audio-quality 0 \
+                $2
+
+            exit $?
+        elif [ $1 = "video" ]; then
+            yt-dlp ${args} --recode-video mp4 $2
+
+            exit $?
+        fi
+    fi
+
+    echo "Usage: video-dl [audio|video] [URL] [URL...]"
+    exit 1
+}
