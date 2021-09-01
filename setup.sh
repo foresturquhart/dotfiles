@@ -65,6 +65,7 @@ function install-files {
   local mkdir=(
     "${HOME}/go/{bin,pkg,src}"
     "${HOME}/bin"    
+    "${HOME}/Projects"    
   )
 
   local touch=(
