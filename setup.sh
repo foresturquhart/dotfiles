@@ -425,6 +425,7 @@ function install-packages {
     "the-unarchiver"
     "transmission"
     "visual-studio-code"
+    "vnc-server"
     "vnc-viewer"
     "zoom"
   )
